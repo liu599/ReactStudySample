@@ -1,0 +1,34 @@
+{
+  "name": "react-study-sample",
+  "version": "1.0.0",
+  "description": "react+redux+webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liu599/ReactStudySample.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Tokei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liu599/ReactStudySample/issues"
+  },
+  "homepage": "https://github.com/liu599/ReactStudySample#readme",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1"
+  }
+}
