@@ -8,6 +8,7 @@
 /* eslint-disable strict */
 // File | Settings | Languages&Frameworks | Node.js and NPM for Windows and Linux
 // IntelliJ IDEA | Preferences | Languages&Frameworks | Node.js and NPM for OS X
+// Series3 : watch module changing
 
 'use strict';
 
@@ -20,6 +21,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
     },
+    plugins:[
+        // Hot Module Replacement
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
+    ],
     module: {
         loaders: [
             {
@@ -27,9 +34,10 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 // tell babel what to do
-                // compile js and ES6 preset
+                // compile js with ES6 preset
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: ['react', 'es2015','react-hmre']
+                    // babel-preset-react-hmre
                 }
             }
         ]
