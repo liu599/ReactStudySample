@@ -13,9 +13,14 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: ['./client/client.js'],  // starting file
+    devtool: 'inline-source-map',
+    entry: [
+        'webpack-hot-middleware/client',
+        './client/client.js',     // starting file
+    ],
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
