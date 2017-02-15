@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/liu599/ReactStudySample#readme",
   "dependencies": {
+    "babel-eslint": "^7.1.1",
     "express": "^4.14.1",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",

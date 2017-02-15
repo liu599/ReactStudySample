@@ -1,6 +1,6 @@
 /*
  * @author: tokei
- * @desc: clint js
+ * @desc: Client JS
  * @date: 2017/2/15
  * @license: M.I.T
  */
@@ -10,12 +10,8 @@
 'use strict';
 
 import React from 'react';
-// render function in the react-dom library
-// import { render } from 'react-dom';
-
+import { render } from 'react-dom';
 import App from '../components/App';
-
-const render = require('react-dom').render;
 
 render(
     // define the encompassing component

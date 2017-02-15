@@ -6,16 +6,21 @@
  */
 
 import React from 'react';
-
 // import { Component } from 'react';
+import TextDisplay from './TextDisplay';
 
 const Component = require('react').Component;
 
+
+
 class App extends Component {
+
     // JSX and render function
     render () {
-        return <div>This is a React app! 3</div>
+        return <div><div>This is a React app! 3</div>
+                <TextDisplay /></div>
     }
+
 }
 
 export default App;
