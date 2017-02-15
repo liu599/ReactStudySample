@@ -13,8 +13,6 @@ import React from 'react';
 // render function in the react-dom library
 import { render } from 'react-dom';
 
-import App from '../components/App';
-
 const render = require('react-dom').render;
 
 render(
