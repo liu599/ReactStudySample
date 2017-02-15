@@ -11,11 +11,15 @@
 
 import React from 'react';
 // render function in the react-dom library
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
+
+import App from '../components/App';
 
 const render = require('react-dom').render;
 
 render(
     // define the encompassing component
     // Dom element we want to mount it to
+    <App/>,
+    document.getElementById('app')
 )
