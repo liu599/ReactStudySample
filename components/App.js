@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 import TextInput from './TextInput';
-
+import TextComponent from './TextComponent'
 
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     // JSX and render function
     render () {
         return <div><div>This is a App Component</div>
-                <TextInput /></div>
+                <TextInput /><TextComponent /></div>
     }
 
 }

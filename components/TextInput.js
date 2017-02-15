@@ -34,6 +34,7 @@ class TextInput extends Component {
               value={this.state.inputText}
               onChange={this.handleChange.bind(this)}
             />
+            <button>Submit</button>
             <TextDisplay text={this.state.inputText}/>
             </div>
     }
