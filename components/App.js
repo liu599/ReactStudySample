@@ -5,11 +5,8 @@
  * @license: M.I.T
  */
 
-import React from 'react';
-// import { Component } from 'react';
-import TextDisplay from './TextDisplay';
-
-const Component = require('react').Component;
+import React, { Component } from 'react';
+import TextInput from './TextInput';
 
 
 
@@ -17,8 +14,8 @@ class App extends Component {
 
     // JSX and render function
     render () {
-        return <div><div>This is a React app! 3</div>
-                <TextDisplay /></div>
+        return <div><div>This is a App Component</div>
+                <TextInput /></div>
     }
 
 }
