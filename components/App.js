@@ -10,6 +10,9 @@ import TextInput from './TextInput';
 import TextComponent from './TextComponent'
 import { connect } from 'react-redux'
 
+import { bindActionCreators } from 'redux'
+import actions from '../redux/action'
+
 
 
 class App extends Component {
@@ -19,8 +22,8 @@ class App extends Component {
         return (
             <div>
               <div>This is a App Component </div>
-                <TextInput  dispatch = {this.props.dispatch}/>
-                <TextComponent dispatch = {this.props.dispatch} todos={ this.props.todos }/>
+                <TextInput  addTodo = {this.props.actions.addTodo}/>
+                <TextComponent  actions={this.props.actions} todos = {this.props.todos}/>
             </div>
         );
     }
@@ -28,9 +31,16 @@ class App extends Component {
 }
 
 function mapStateToProps(state){
-    "use strict";
+
     return state;
 }
 
+function mapDispatchToProps(dispatch){
 
-export default connect(mapStateToProps)(App);
+    return{
+        actions: bindActionCreators(actions, dispatch)
+    }
+
+}
+// It is annoying to add dispatch to every item.
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 import TextDisplay from './TextDisplay';
-import actions from '../redux/action'
+// import actions from '../redux/action'
 
 class TextInput extends Component {
 
@@ -30,7 +30,7 @@ class TextInput extends Component {
     handleSubmit(event){
         event.preventDefault();
         console.log('submit button clicked');
-        this.props.dispatch(actions.addTodo(this.state.inputText));
+        this.props.addTodo(this.state.inputText);
     }
 
     render() {
