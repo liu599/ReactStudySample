@@ -4,7 +4,7 @@ function getID(state) {
     }, -1) + 1;
 }
 
-let reducer =  function(state,action){
+let reducer =  function(state,action) {
     "use strict";
     switch (action.type) {
 
@@ -23,3 +23,5 @@ let reducer =  function(state,action){
             return state;
     }
 }
+
+export default reducer;

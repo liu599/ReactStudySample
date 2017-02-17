@@ -1,5 +1,5 @@
 let actions ={
-    addTodo: function(Text){
+    addTodo: function(text){
         "use strict";
         return {
             type: 'ADD_TODO',

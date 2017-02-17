@@ -19,7 +19,7 @@ let initialState = {
         completed: false,
         text: 'Initial todos for demo purpose',
     }]
-}
+};
 
 
 let store = configureStore(initialState);
@@ -37,4 +37,4 @@ render(
     <App />
     </Provider>,
     document.getElementById('app')
-)
+);

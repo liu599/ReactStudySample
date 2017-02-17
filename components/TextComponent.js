@@ -1,9 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
 
 class TextComponent extends Component {
 
-    render(){
-        return <div> Todo </div>
+    render() {
+        return (
+            <div>
+                <ul>
+                        {
+                            this.props.todos.map((todo) => {
+                                return <li key={todo.id}>{todo.text}</li>
+                            })
+                        }
+                </ul>
+            </div>
+        )
     }
 }
 
