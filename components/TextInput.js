@@ -27,23 +27,27 @@ class TextInput extends Component {
         })
     }
 
-    handleSubmit(){
+    handleSubmit(event){
         event.preventDefault();
         console.log('submit button clicked');
         this.props.dispatch(actions.addTodo(this.state.inputText));
     }
 
     render() {
-        return <div>
-            <input
-              type="text"
-              placeholder="This is going to be text"
-              value={this.state.inputText}
-              onChange={this.handleChange.bind(this)}
-            />
-            <button onClick={this.handleSubmit.bind(this)} >Submit</button>
-            <TextDisplay text={this.state.inputText}/>
+        return (
+            <div>
+                <form onSubmit={this.handleSubmit.bind(this)}>
+                    <input
+                      type="text"
+                      placeholder="This is going to be text"
+                      value={this.state.inputText}
+                      onChange={this.handleChange.bind(this)}
+                    />
+                    <TextDisplay text={this.state.inputText}/>
+                    <input type="submit"  />
+                </form>
             </div>
+        );
     }
 
 }

@@ -20,7 +20,7 @@ class App extends Component {
             <div>
               <div>This is a App Component </div>
                 <TextInput  dispatch = {this.props.dispatch}/>
-                <TextComponent todos={ this.props.todos }/>
+                <TextComponent dispatch = {this.props.dispatch} todos={ this.props.todos }/>
             </div>
         );
     }
