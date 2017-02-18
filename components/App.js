@@ -22,7 +22,7 @@ class App extends Component {
         return (
             <div>
                 <div>this is app</div>
-                <UserInfo user={this.props.user} createNewUserId={this.props.actions.createNewUserId}/>
+                <UserInfo user={this.props.user} actions={this.props.actions}/>
                 <TextInput  addTodo = {this.props.actions.addTodo}/>
                 <TextComponent  actions={this.props.actions} todos = {this.props.todos}/>
             </div>
