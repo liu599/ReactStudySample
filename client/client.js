@@ -18,7 +18,11 @@ let initialState = {
         id: 0,
         completed: false,
         text: 'Initial todos for demo purpose',
-    }]
+    }],
+    user: {
+        username: 'eddie32',
+        id: 13
+    }
 };
 
 

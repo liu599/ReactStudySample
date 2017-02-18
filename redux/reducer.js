@@ -33,6 +33,14 @@ let reducer =  function(state,action){
                 })
             })
 
+        case 'CREATE_USER_ID':
+            return Object.assign({},state,{
+                user: {
+                    username: state.user.username,
+                    id: action.id
+                }
+            })
+
         default:
             return state;
     }

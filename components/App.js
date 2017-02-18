@@ -12,7 +12,7 @@ import { connect } from 'react-redux'
 
 import { bindActionCreators } from 'redux'
 import actions from '../redux/action'
-
+import UserInfo from './userInfo'
 
 
 class App extends Component {
@@ -21,7 +21,8 @@ class App extends Component {
     render () {
         return (
             <div>
-              <div>This is a App Component </div>
+                <div>this is app</div>
+                <UserInfo user={this.props.user} createNewUserId={this.props.actions.createNewUserId}/>
                 <TextInput  addTodo = {this.props.actions.addTodo}/>
                 <TextComponent  actions={this.props.actions} todos = {this.props.todos}/>
             </div>
