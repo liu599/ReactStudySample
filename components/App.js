@@ -21,7 +21,7 @@ class App extends Component {
     render () {
         return (
             <div>
-                <div>this is app</div>
+                <div>this is app 2</div>
                 <UserInfo user={this.props.user} actions={this.props.actions}/>
                 <TextInput  addTodo = {this.props.actions.addTodo}/>
                 <TextComponent  actions={this.props.actions} todos = {this.props.todos}/>
